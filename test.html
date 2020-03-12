@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript Test</title>
+</head>
+<body>
+    
+
+<script>
+
+
+
+//Table
+// function tableNum(number){
+// for(var i=1; i<=10; i++){
+// console.log(number+"*"+i+"=" +number*i);
+// }
+// }
+// function tableSetrange(a,b){
+// for(var i=a; i<=b; i++){
+//   console.log('------------------------------');
+//   tableNum(i);
+//   console.log('------------------------------');
+// }
+// }
+// tableSetrange(3,5);
+
+// //Math Operator
+// function renderOperators(number1 ,operator, number2 ){
+// if(operator=== '+' ){
+// console.log('Math Operator Plus :'  ,number1+number2);
+// }
+// if(operator=== '-' ){
+// console.log('Math Operator Minus :'  ,number1-number2);
+// }
+// if(operator=== '*' ){
+// console.log('Math Operator Multiply :'  ,number1*number2);
+// }
+// if(operator=== '/' ){
+// console.log('Math Operator Divide :'  ,number1/number2);
+// }
+// }
+// renderOperators( 5 , '-'  , 3 );
+
+// //Reverse
+// function reverseNum(one,last){
+// for(var i=one; i>=last; i--){
+// console.log('Reverse Answer :'  +i);
+// }
+// }
+// reverseNum(15 , 6);
+
+//String to Array 
+// function sss(str){
+// var ar = str.split(','); 
+// console.log(ar ); 
+// }
+// var str = "Ali, Khalid, Usman, Wasi, Salman, Shadab, Umar";
+// sss(str);
+
+
+// var nums='1,2,3,4,5,6,7,8,9,10';
+// conCatinate(nums);
+
+//EvenODD
+// function printOddEvenNumbers(num1,num2){
+// for(var i=num1;i<=num2;i++)
+// {
+// if(i % 2 != 0){
+//  console.log("Odd", +i);
+// }else{
+//     console.log("Even", +i); 
+//     }
+// }
+// }
+// printOddEvenNumbers(2,9);
+
+//EvenODD
+// function oddEven(num1,num2){ 
+// document.write("<table>");
+// for(i=num1;i<=num2;i++){
+// if(i%2 == 0) { // even
+// document.write("<td>"+i+"</td></tr>");
+// }
+// else{
+// document.write("<tr><td>"+i+"</td>");
+// }
+// }
+// document.write("<table>"); 
+// }
+// oddEven(1,20);
+
+
+//Findname
+// var names = ['Wasi', 'Ali', 'khalid','usman','bhai','mani'];
+// var findName = 'mani';
+// var matchFound = false;
+// nameFinder(names, findName);
+// function nameFinder(names, findName){
+// for ( var i = 0; i <=names.length; i++ ) {
+//         if ( names[i] === findName) { 
+//             matchFound=true;    
+// console.log('Got' ,findName);  
+//         } 
+//         else{
+//      if(names.length-1 == i){ 
+
+//             console.log('Not Found');  
+//           }
+//         }
+// }
+// }
+
+
+// var names = ['Wasi', 'Ali', 'khalid','usman','bhai','mani'];
+// var findName = 'amani';
+// nameFinder(names, findName);
+// function nameFinder(names, findName){
+// for ( var i = 0; i <=names.length; i++ ) {
+//         if () {  
+// console.log('Got' ,findName);  
+//         } 
+//         else{
+
+//             console.log('Not Found');  
+        
+//             }
+// }
+// }
+
+
+//Boolean Flag
+// var names = ['Wasi', 'Ali', 'khalid','usman','bhai','mani'];
+// var findName = 'Wasi';
+// var matchFound = false;
+//  function finder(findName,names){
+//  for (var i = 0; i<=names.length; i++){
+//     if ( names[i] === findName) { 
+//  matchFound = true;
+//  console.log("Find " + findName);
+//  }
+//  }
+//  if (matchFound === false) {
+//  console.log("Didn't Find " + findName);
+//  }
+// }
+// finder(findName,names)
+
+//concatinate
+// var names = ['Wasi', 'Ali', 'khalid','usman','bhai','lahore','kraachi','isla','rawalpindi','israel'];
+// function concatinate(names){
+// for ( var i = 0; i <=names.length / 2; i++ ) {
+//   console.log(names[i]+ " " +names[names.length -1]);  
+// }
+// }
+// concatinate(names);
+
+
+// var num1= Math.ceil(Math.random()*10);
+// var num2= Math.ceil(Math.random()*10);
+// function sumAdd (num1,num2){
+// var ans= +prompt(num1 + "+" + num2);
+// if(ans === num1+num2){
+// alert("Correct");
+// }else{
+//     sumAdd();
+
+// }
+// }
+// sumAdd(num1,num2);
+
+
+// var num1= +prompt("Enter first number");
+// var num2= +prompt("Enter second number");
+// var ope= prompt("Enter operator");
+
+// function sWirch(num1,ope,num2){
+//  switch(ope) {
+//  case "+" :
+//  alert(num1+num2);
+//  break;
+//  case "-" :
+//  alert(num1-num2);
+//  break;
+//  case "*" :
+//  alert(num1*num2);
+//  break;
+//  default :
+//  alert("Shoot me now!");
+//  }
+// }
+// sWirch(num1,ope,num2);
+
+
+
+toTaldate();
+function toTaldate(){
+var today = new Date();
+var Todayyear = today.getFullYear();
+var Todaymonth = today.getMonth();
+var Todayday = today.getDay();
+var TodaydaTe = today.getDate();
+var Todayhour = today.getHours();
+var Todayminute = today.getMinutes();
+var Todaysecond = today.getSeconds();
+var daylist = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
+var monthlist = ["January", "February", "March", "April", "May", "June","July", "August", "September", "October", "November", "December"];
+var Todaymonth = monthlist[Todaymonth];
+var TodaygetDay = daylist[Todayday];
+
+//console.log(TodaygetDay); 
+//console.log("Current Time : "  +Todayhour +":"+ Todayminute +":"+ Todaysecond);
+
+var date_future = new Date("March 12 2020");
+var delta = Math.abs(date_future - today) / 1000;
+//var days = Math.floor(delta / 86400);
+var hoursT = Math.floor(delta / 3600) % 24;
+var minutesT = Math.floor(delta / 60) % 60;
+var secondsT = Math.ceil(delta % 60);
+
+switch(TodaygetDay){
+case "Monday":
+console.log("Today is : " + TodaygetDay);
+console.log("Today Date : " + TodaydaTe + "/" + Todaymonth   + "/" + Todayyear );
+console.log("Current Time : " +today.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', second:'numeric', hour12: true }));
+console.log("Time you Have:"  + hoursT +":"+ minutesT +":"+ secondsT);
+console.log("Time you Spend: "  + lossHours +":"+ lossMin +":"+ lossSpend);
+//console.log("Current Time : "  + hour+":"+ minute +":"+ second);
+break;
+
+case "Tuesday":
+console.log("Today is : " + TodaygetDay);
+console.log("Today Date : " + TodaydaTe + "/" + Todaymonth   + "/" + Todayyear );
+console.log("Current Time : " +today.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', second:'numeric', hour12: true }));
+console.log("Time you Have:"  + hoursT +":"+ minutesT +":"+ secondsT);
+console.log("Time you Spend: "  + Todayhour +":"+ Todayminute +":"+ Todaysecond);
+break;
+
+case "Wednesday" :
+console.log("Today is : " + TodaygetDay);
+console.log("Today Date : " + TodaydaTe + "/" + Todaymonth   + "/" + Todayyear );
+console.log("Current Time : " +today.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', second:'numeric', hour12: true }));
+console.log("Time you Have:"  + hoursT +":"+ minutesT +":"+ secondsT);
+console.log("Time you Spend: "  + Todayhour +":"+ Todayminute +":"+ Todaysecond);
+break;
+case "Thursday" :
+console.log("Today is : " + TodaygetDay);
+console.log("Today Date : " + TodaydaTe + "/" + Todaymonth   + "/" + Todayyear );
+console.log("Current Time : " +today.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', second:'numeric', hour12: true }));
+console.log("Time you Have:"  + hoursT +":"+ minutesT +":"+ secondsT);
+console.log("Time you Spend: "  + Todayhour +":"+ Todayminute +":"+ Todaysecond);
+break;
+
+// default :
+// console.log("Today is : " + TodaygetDay);
+// console.log("Today Date : " + TodaydaTe + "/" + Todaymonth   + "/" + Todayyear );
+// console.log("Current Time : " +today.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', second:'numeric', hour12: true }));
+// console.log("Time you Have:"  + hoursT +":"+ minutesT +":"+ secondsT);
+// console.log("Time you Spend: "  + Todayhour +":"+ Todayminute +":"+ Todaysecond);
+
+}
+}
+
+
+
+
+var today = new Date();
+var Todayyear = today.getFullYear();
+var Todaymonth = today.getMonth();
+var Todayday = today.getDay();
+var TodaydaTe = today.getDate();
+var Todayhour = today.getHours();
+var Todayminute = today.getMinutes();
+var Todaysecond = today.getSeconds();
+
+var daylist = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
+
+var monthlist = ["January", "February", "March", "April", "May", "June","July", "August", "September", "October", "November", "December"];
+var Todaymonth = monthlist[Todaymonth];
+var TodaygetDay = daylist[Todayday];
+
+
+var dd = "Wednesday";
+switch(TodaygetDay) {
+ case "Sunday" :
+ console.log("Sunday");
+ break;
+ case "Monday" :
+ console.log("WhoopeeMonday");
+ break;
+ case "Tuesday":
+ console.log(TodaygetDay);
+ break;
+ case "Wednesday" :
+ console.log("Wednesday!Fre");
+ break;
+ case "Thursday" :
+ console.log("Thursday!Fre");
+ break;
+
+ default :
+ console.log("Shoot me now!sdd");
+
+ }
+
+
+</script>
+
+</body>
+</html>
